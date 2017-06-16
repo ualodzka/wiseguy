@@ -8,10 +8,11 @@
         android:id="@+id/chat_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/input_et"
+        android:layout_above="@+id/input_et"
         android:layout_alignParentTop="true"
         android:background="@color/colorChatBackground"
         android:orientation="vertical">
+
     </LinearLayout>
 
     <EditText
@@ -20,12 +21,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
         android:layout_toLeftOf="@+id/switcher_send_button"
+        android:layout_toStartOf="@+id/switcher_send_button"
         android:background="@color/white"
-        android:hint="Press here to talk to Wise Guy"
+        android:hint="@string/edit_text_hint"
         android:maxLines="4"
         android:paddingBottom="12dp"
+        android:paddingEnd="12dp"
         android:paddingLeft="12dp"
+        android:paddingStart="12dp"
         android:paddingTop="12dp"
         android:textColorHint="@color/gray" />
 
@@ -34,6 +39,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
         android:background="@color/white"
         android:padding="12dp">
